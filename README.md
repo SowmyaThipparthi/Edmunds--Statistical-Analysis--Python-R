@@ -16,12 +16,12 @@ import pandas as pd
 from nltk.stem import *
 from textblob import TextBlob
 
-# Toincrease the width of the output screen
+# To increase the width of the output screen
 desired_width = 320
 pd.set_option ('display.width',desired_width)
 pd.set_option('display.max_columns',12)
 
-# Reda the dataset
+# Read the dataset
 car_data = pd.read_csv(r' path')
 # create an another column with same data (Reviews)
 car_data ['Normalize_review'] = car_data['Review']
